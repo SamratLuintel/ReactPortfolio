@@ -1,0 +1,16 @@
+.Site-main-area {
+  margin-left: 25%;
+
+  &:before {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    content: " ";
+    display: block;
+    width: 25%;
+    background: url("assets/images/home-bg.jpg") top center no-repeat #bababa;
+    background-size: cover;
+  }
+}

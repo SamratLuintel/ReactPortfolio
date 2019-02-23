@@ -1,0 +1,27 @@
+@import "ProjectsTimeline/ProjectsTimeline";
+
+.Portfolio__main-section {
+  max-width: 1400px;
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+}
+
+.Portfolio__title {
+  line-height: 1;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.Portfolio__description {
+  font-weight: 300;
+  color: #333;
+  line-height: 26px;
+  font-size: 1rem;
+  span {
+    font-weight: 500;
+  }
+}
