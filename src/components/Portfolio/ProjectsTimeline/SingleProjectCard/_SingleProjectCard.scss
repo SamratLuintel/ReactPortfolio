@@ -1,28 +1,40 @@
 .SingleProjectCard {
   position: relative;
+  @media screen and (max-width: 567px) {
+    border-top: 1px solid #ddd;
+    padding-top: 15px !important;
+    margin-top: 15px !important;
+  }
 }
 
 .SingleProjectCard__date {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100px;
-  padding: 30px 15px;
-  color: #999;
-  text-align: right;
-  font-style: italic;
-  line-height: 30px;
-  border-right: 1px solid #ddd;
-  &:after {
-    content: " ";
+  @media screen and (min-width: 567px) {
+    color: #999;
     position: absolute;
-    top: 42.5px;
-    right: -2.5px;
-    display: block;
-    width: 5px;
-    height: 5px;
-    background-color: rgba(187, 30, 30, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    padding: 30px 15px;
+    color: #999;
+    text-align: right;
+    font-style: italic;
+    line-height: 30px;
+    border-right: 1px solid #ddd;
+    &:after {
+      content: " ";
+      position: absolute;
+      top: 42.5px;
+      right: -2.5px;
+      display: block;
+      width: 5px;
+      height: 5px;
+      background-color: rgba(187, 30, 30, 0.8);
+    }
+  }
+
+  @media screen and (max-width: 567px) {
+    color: #999;
   }
 }
 
@@ -49,6 +61,11 @@
   padding: 30px 0;
   margin-left: 160px;
   overflow: hidden;
+
+  @media screen and (max-width: 567px) {
+    margin-left: 0px;
+    padding: 15px 0 0;
+  }
 }
 
 .SingleProjectCard__content--no-border {
@@ -57,10 +74,16 @@
 
 .SingleProjectCard__content {
   display: flex;
+  @media screen and (max-width: 1023px) {
+    flex-direction: column;
+  }
 }
 
 .SingleProjectCard__content__project-text {
   width: 50%;
+  @media screen and (max-width: 1023px) {
+    width: auto;
+  }
 }
 
 .SingleProjectCard__project-title {
@@ -150,6 +173,12 @@
   width: 50%;
   padding-left: 30px;
   text-align: center;
+
+  @media screen and (max-width: 1023px) {
+    width: auto;
+    padding-left: 0;
+    margin-top: 30px;
+  }
 }
 
 .SingleProjectCard__image-section__image {

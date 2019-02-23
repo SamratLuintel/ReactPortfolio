@@ -2,6 +2,9 @@
 
 .ProjectsTimeline {
   margin-left: -50px;
+  @media screen and (max-width: 1023px) {
+    margin-left: 0;
+  }
 }
 
 .ProjectsTimeline__projects-lists {

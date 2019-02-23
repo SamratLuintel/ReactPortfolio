@@ -1,6 +1,18 @@
 import React, { Component } from "react";
 import Samrat from "../../assets/images/samrat.jpg";
+import classnames from "classnames";
+
 class SideBar extends Component {
+  state = {
+    sideBarExtended: false
+  };
+
+  toggleSideBarExtended = () => {
+    this.setState(prevState => ({
+      sideBarExtended: !prevState.sideBarExtended
+    }));
+  };
+
   render() {
     return (
       <div className="SideBar">
@@ -19,25 +31,58 @@ class SideBar extends Component {
             </div>
           </div>
 
-          <div className="SideBar__main-navigation">
-            <ul className="SideBar__navigation-links-lists">
-              <li className="SideBar__navigation-link SideBar__navigation-link--selected">
-                Portfolio <span />
-              </li>
-              <li className="SideBar__navigation-link">
-                Skills & offer
-                <span />
-              </li>
-              <li className="SideBar__navigation-link">
-                Contact Me <span />
-              </li>
-            </ul>
+          <div
+            className={classnames({
+              "SideBar__main-navigation": true,
+              "SideBar__main-navigation--extended": this.state.sideBarExtended
+            })}
+          >
+            <div className="SideBar__navigation-extend-bar">
+              <div className="SideBar__social-icons-lists">
+                <div className="SideBar__social-icon SideBar__social-icon--small">
+                  <i className="fas fa-envelope" />
+                </div>
+                <div className="SideBar__social-icon SideBar__social-icon--small">
+                  <i className="fab fa-linkedin" />
+                </div>
+                <div className="SideBar__social-icon SideBar__social-icon--small">
+                  <i className="fab fa-github-square" />
+                </div>
+                <div className="SideBar__social-icon SideBar__social-icon--small">
+                  <i className="fab fa-facebook-square" />
+                </div>
+                <div className="SideBar__social-icon SideBar__social-icon--small">
+                  <i className="fab fa-twitter-square" />
+                </div>
+              </div>
 
-            <ul className="SideBar__navigation-links-lists SideBar__navigation-links-lists--top-margin">
-              <li className="SideBar__navigation-link">
-                My CV <span />
-              </li>
-            </ul>
+              <div
+                className="SideBar__extend-btn"
+                onClick={this.toggleSideBarExtended}
+              >
+                <i className="fas fa-bars" />
+              </div>
+            </div>
+            <div className="SideBar__navigation-extendable">
+              <ul className="SideBar__navigation-links-lists">
+                <li className="SideBar__navigation-link SideBar__navigation-link--selected">
+                  Portfolio <span />
+                </li>
+                <li className="SideBar__navigation-link">
+                  Skills & offer
+                  <span />
+                </li>
+                <li className="SideBar__navigation-link">
+                  Contact Me <span />
+                </li>
+              </ul>
+
+              <ul className="SideBar__navigation-links-lists SideBar__navigation-links-lists--top-margin">
+                <li className="SideBar__navigation-link">
+                  My CV <span />
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="SideBar__social-block">

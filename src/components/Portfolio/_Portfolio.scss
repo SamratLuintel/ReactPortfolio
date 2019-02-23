@@ -5,6 +5,10 @@
   padding: 50px;
   background-color: #fff;
   color: #333;
+  @media screen and (max-width: 1023px) {
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
 }
 
 .Portfolio__title {

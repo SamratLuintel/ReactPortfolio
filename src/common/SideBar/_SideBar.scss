@@ -10,6 +10,33 @@
   color: #fff;
   text-align: left;
   background-color: rgba(145, 13, 13, 0.8);
+
+  @media screen and (max-width: 1023px) {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    position: relative;
+    width: auto;
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}
+
+.SideBar {
+  &:before {
+    @media screen and (max-width: 1023px) {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: -50px;
+      content: " ";
+      display: block;
+      width: auto;
+      height: 850px;
+    }
+  }
 }
 
 .SideBar__inner {
@@ -17,6 +44,12 @@
   position: relative;
   height: 100%;
   overflow-y: auto;
+
+  @media screen and (max-width: 1023px) {
+    overflow: initial;
+    height: auto;
+    padding: 0 40px;
+  }
 }
 
 .SideBar__person__avatar-wrapper {
@@ -33,6 +66,8 @@
 
 .SideBar__person__content {
   text-align: center;
+  margin-left: -40px;
+  margin-right: -40px;
 }
 
 .SideBar__person__content__title {
@@ -54,12 +89,49 @@
   position: relative;
   font-size: 0.875rem;
   text-transform: uppercase;
+
+  @media screen and (max-width: 1023px) {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: right;
+    margin: 20px -40px 0;
+  }
+}
+.SideBar__main-navigation--extended {
+  .SideBar__navigation-extendable {
+    height: 220px;
+  }
+}
+.SideBar__navigation-extendable {
+  @media screen and (max-width: 1023px) {
+    height: 0;
+  }
+  transition: height 0.5s;
+}
+.SideBar__navigation-extend-bar {
+  font-size: 1.125rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-width: 1px 0;
+  padding: 0 20px;
+  display: none;
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .SideBar__navigation-links-lists {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media screen and (max-width: 1023px) {
+    font-size: 14px;
+    text-transform: uppercase;
+
+    text-align: right;
+  }
 }
 
 .SideBar__navigation-link {
@@ -71,6 +143,10 @@
   cursor: pointer;
   color: #ccc;
 
+  @media screen and (max-width: 1023px) {
+    padding: 0 20px;
+    line-height: 50px;
+  }
   &:hover {
     color: #fff;
     span {
@@ -82,6 +158,9 @@
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
         font-size: 0.65rem;
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
       }
     }
   }
@@ -101,6 +180,9 @@
     bottom: 6px;
     left: auto;
     right: 0;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 
   span {
@@ -112,17 +194,26 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       font-size: 0.65rem;
+      @media screen and (max-width: 1023px) {
+        display: none;
+      }
     }
   }
 }
 
 .SideBar__navigation-links-lists--top-margin {
   margin-top: 30px;
+  @media screen and (max-width: 1023px) {
+    margin-top: 0px;
+  }
 }
 
-.Sidebar__social-block {
+.SideBar__social-block {
   margin-top: 45px;
   font-size: 1.375rem;
+  @media screen and (max-width: 1023px) {
+    display: none;
+  }
 }
 
 .SideBar__social-block__title {
@@ -142,6 +233,19 @@
   color: rgba(255, 255, 255, 0.6);
   margin-right: 0.4em;
   line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.SideBar__social-icon--small {
+  font-size: 1.2rem;
+}
+
+.SideBar__extend-btn {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+
   &:hover {
     color: #fff;
   }

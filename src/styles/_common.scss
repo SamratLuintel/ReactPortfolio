@@ -1,6 +1,8 @@
 .Site-main-area {
   margin-left: 25%;
-
+  @media screen and (max-width: 1023px) {
+    margin-left: 0%;
+  }
   &:before {
     position: fixed;
     top: 0;
@@ -12,5 +14,8 @@
     width: 25%;
     background: url("assets/images/home-bg.jpg") top center no-repeat #bababa;
     background-size: cover;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
 }
