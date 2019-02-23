@@ -1,0 +1,148 @@
+.SideBar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  overflow: hidden;
+  z-index: 2;
+  width: 25%;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  background-color: rgba(145, 13, 13, 0.8);
+}
+
+.SideBar__inner {
+  padding: 45px 40px;
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.SideBar__person__avatar-wrapper {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.SideBar__person__avatar {
+  width: 152px;
+  height: 152px;
+  border-radius: 50%;
+}
+
+.SideBar__person__content {
+  text-align: center;
+}
+
+.SideBar__person__content__title {
+  font-size: 1.375rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+.SideBar__person__content__sub-title {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 26px;
+}
+
+.SideBar__main-navigation {
+  margin: 45px -40px;
+  line-height: 30px;
+  position: relative;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.SideBar__navigation-links-lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.SideBar__navigation-link {
+  position: relative;
+  padding: 0 40px;
+  font-size: 0.875rem;
+  line-height: 30px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #ccc;
+
+  &:hover {
+    color: #fff;
+    span {
+      &:after {
+        content: "\f054";
+        position: relative;
+        top: -1px;
+        padding-left: 3px;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 0.65rem;
+      }
+    }
+  }
+}
+
+.SideBar__navigation-link--selected {
+  color: #fff;
+  &:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-right: 8px solid #fff;
+    bottom: 6px;
+    left: auto;
+    right: 0;
+  }
+
+  span {
+    &:after {
+      content: "\f054";
+      position: relative;
+      top: -1px;
+      padding-left: 3px;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 0.65rem;
+    }
+  }
+}
+
+.SideBar__navigation-links-lists--top-margin {
+  margin-top: 30px;
+}
+
+.Sidebar__social-block {
+  margin-top: 45px;
+  font-size: 1.375rem;
+}
+
+.SideBar__social-block__title {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.SideBar__social-icon {
+  display: inline-block;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 22px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 0.4em;
+  line-height: 1;
+  &:hover {
+    color: #fff;
+  }
+}
