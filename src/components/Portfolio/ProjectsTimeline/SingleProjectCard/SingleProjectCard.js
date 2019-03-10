@@ -38,9 +38,8 @@ class SingleProjectCard extends Component {
               </ul>
             </div>
 
-            <div className="SingleProjectCard__more-details-btn">
-              More Details
-            </div>
+            <div className="SingleProjectCard__details-btn">More Details</div>
+            <div className="SingleProjectCard__details-btn">View Live</div>
 
             <div className="SingleProjectCard__project-technologies">
               <div className="SingleProjectCard__project-technologies__title">
