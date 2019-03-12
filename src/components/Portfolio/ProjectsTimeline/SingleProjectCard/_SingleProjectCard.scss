@@ -127,7 +127,7 @@
 }
 
 .SingleProjectCard__details-btn {
-  background-color: #af2222;
+  background-color: #9a1e1e;
   border: 1px solid #9a1e1e;
   color: #fff;
   padding: 0.7em 1.2em;
@@ -136,8 +136,21 @@
   margin-right: 1em;
   display: inline-block;
   cursor: pointer;
+  transition: 0.3s all ease-in-out;
+
   &:hover {
-    text-decoration: underline;
+    background-color: #fff;
+    color: #9a1e1e;
+  }
+}
+
+.SingleProjectCard__details-btn--only-outline {
+  background-color: #fff;
+  color: #9a1e1e;
+  transition: 0.3s all ease-in-out;
+  &:hover {
+    background-color: #9a1e1e;
+    color: #fff;
   }
 }
 
@@ -160,7 +173,7 @@
 
 .SingleProjectCard__single-tech-tag {
   display: inline-block;
-  background-color: rgba(175, 34, 34, 0.8);
+  background-color: #8e8888;
   color: #fff;
   padding: 4px 10px;
   font-size: 13px;
@@ -168,9 +181,6 @@
   margin-right: 3px;
   margin-top: 3px;
   cursor: pointer;
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .SingleProjectCard__image-section {

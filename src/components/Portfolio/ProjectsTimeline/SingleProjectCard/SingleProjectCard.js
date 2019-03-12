@@ -46,13 +46,15 @@ class SingleProjectCard extends Component {
 
             <div
               onClick={this.redirectToRepo}
-              className="SingleProjectCard__details-btn"
+              className="SingleProjectCard__details-btn SingleProjectCard__details-btn--only-outline"
+              role="button"
             >
               Git Repo
             </div>
             <div
               onClick={this.redirectToLink}
               className="SingleProjectCard__details-btn"
+              role="button"
             >
               View Live
             </div>
