@@ -31,7 +31,7 @@ class ProjectsTimeline extends Component {
               "express",
               "mongodb",
               "bem+scss",
-              "socket.io"
+              "d3.js"
             ]}
             first
             date="2017-2018"
@@ -55,7 +55,8 @@ class ProjectsTimeline extends Component {
               "nodejs",
               "express",
               "mongodb",
-              "bem+scss"
+              "bem+scss",
+              "socket.io"
             ]}
             github="https://github.com/SamratLuintel/Chat-App"
             link="https://samrat-chat-app.herokuapp.com/"
@@ -93,7 +94,8 @@ class ProjectsTimeline extends Component {
               "express",
               "mongodb",
               "bem+scss",
-              "socket.io"
+              "socket.io",
+              "d3.js"
             ]}
             github="https://github.com/chingu-voyage7/Bears-Team-06"
             link="https://stockma.herokuapp.com/"
@@ -139,8 +141,7 @@ class ProjectsTimeline extends Component {
               "nodejs",
               "express",
               "mongodb",
-              "bem+scss",
-              "socket.io"
+              "bem+scss"
             ]}
             date="2016-2017"
             github="https://github.com/Anshul2166/Harvard_Edu_Portal"

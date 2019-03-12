@@ -3,8 +3,15 @@ import { Route } from "react-router-dom";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Skills from "./components/Skills/Skills";
 import Contact from "./components/Contact/Contact";
+import { withRouter } from "react-router-dom";
 
 class App extends Component {
+  componentDidMount = () => {
+    if (this.props.location.pathname === "/") {
+      this.props.history.push("/portfolio");
+    }
+  };
+
   render() {
     return (
       <div className="App">
@@ -16,4 +23,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);
