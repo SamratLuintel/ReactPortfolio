@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Samrat from "../../assets/images/samrat.jpg";
 import classnames from "classnames";
+import { withRouter } from "react-router-dom";
 
 class SideBar extends Component {
   state = {
@@ -14,6 +15,7 @@ class SideBar extends Component {
   };
 
   render() {
+    console.log("From side bar", this.props.location.pathname);
     return (
       <div className="SideBar">
         <div className="SideBar__inner">
@@ -65,14 +67,31 @@ class SideBar extends Component {
             </div>
             <div className="SideBar__navigation-extendable">
               <ul className="SideBar__navigation-links-lists">
-                <li className="SideBar__navigation-link SideBar__navigation-link--selected">
+                <li
+                  className={classnames({
+                    "SideBar__navigation-link": true,
+                    "SideBar__navigation-link--selected":
+                      this.props.location.pathname === "/portfolio"
+                  })}
+                  onClick={() => this.props.history.push("/portfolio")}
+                >
                   Portfolio <span />
                 </li>
-                <li className="SideBar__navigation-link">
+                <li
+                  className={classnames({
+                    "SideBar__navigation-link": true,
+                    "SideBar__navigation-link--selected":
+                      this.props.location.pathname === "/skills"
+                  })}
+                  onClick={() => this.props.history.push("/skills")}
+                >
                   Skills & offer
                   <span />
                 </li>
-                <li className="SideBar__navigation-link">
+                <li
+                  onClick={() => this.props.history.push("/contact")}
+                  className="SideBar__navigation-link"
+                >
                   Contact Me <span />
                 </li>
               </ul>
@@ -110,4 +129,4 @@ class SideBar extends Component {
     );
   }
 }
-export default SideBar;
+export default withRouter(SideBar);

@@ -2,6 +2,12 @@ import React, { Component } from "react";
 import classnames from "classnames";
 
 class SingleProjectCard extends Component {
+  redirectToRepo = () => {
+    window.open(this.props.github, "_blank");
+  };
+  redirectToLink = () => {
+    window.open(this.props.link, "_blank");
+  };
   render() {
     const { props } = this;
     return (
@@ -12,7 +18,7 @@ class SingleProjectCard extends Component {
             "SingleProjectCard__date--first": props.first
           })}
         >
-          <time className="SingleProjectCard__date-text">2017-2018</time>
+          <time className="SingleProjectCard__date-text">{props.date}</time>
         </div>
         <div
           className={classnames({
@@ -38,8 +44,18 @@ class SingleProjectCard extends Component {
               </ul>
             </div>
 
-            <div className="SingleProjectCard__details-btn">More Details</div>
-            <div className="SingleProjectCard__details-btn">View Live</div>
+            <div
+              onClick={this.redirectToRepo}
+              className="SingleProjectCard__details-btn"
+            >
+              Git Repo
+            </div>
+            <div
+              onClick={this.redirectToLink}
+              className="SingleProjectCard__details-btn"
+            >
+              View Live
+            </div>
 
             <div className="SingleProjectCard__project-technologies">
               <div className="SingleProjectCard__project-technologies__title">

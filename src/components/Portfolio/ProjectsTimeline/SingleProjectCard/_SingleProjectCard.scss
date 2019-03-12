@@ -136,6 +136,9 @@
   margin-right: 1em;
   display: inline-block;
   cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .SingleProjectCard__project-technologies {
