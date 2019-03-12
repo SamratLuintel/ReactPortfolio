@@ -1,4 +1,8 @@
 .Contact__main-section {
+  @media screen and (max-width: 1023px) {
+    padding: 30px 20px;
+    margin: 0 auto;
+  }
   max-width: 850px;
   padding: 50px;
   background-color: #fff;
@@ -16,4 +20,47 @@
 
 .Contact__small-paragraph {
   font-weight: 300;
+}
+
+.Contact__single-card {
+  display: flex;
+  align-items: center;
+  margin-block-end: 0.2em;
+  &:first-child {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    i {
+      font-size: 0.9rem;
+    }
+  }
+}
+.Contact__single-card__header {
+  width: 150px;
+  @media screen and (max-width: 1023px) {
+    width: 130px;
+  }
+}
+
+.Contact__single-card__header {
+  color: #333;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.Contact__single-card__link {
+  color: #bb1e1e;
+  cursor: pointer;
+  font-size: 16px;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  i {
+    width: 15px;
+    font-size: 1rem;
+
+    align-self: right;
+    margin-right: 5px;
+  }
 }

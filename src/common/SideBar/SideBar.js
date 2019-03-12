@@ -113,7 +113,12 @@ class SideBar extends Component {
               <div className="SideBar__social-icon">
                 <i className="fab fa-linkedin" />
               </div>
-              <div className="SideBar__social-icon">
+              <div
+                onClick={() =>
+                  window.open("https://github.com/SamratLuintel", "_blank")
+                }
+                className="SideBar__social-icon"
+              >
                 <i className="fab fa-github-square" />
               </div>
               <div className="SideBar__social-icon">
