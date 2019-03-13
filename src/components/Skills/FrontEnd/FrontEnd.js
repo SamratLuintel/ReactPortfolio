@@ -12,8 +12,6 @@ class FrontEnd extends Component {
           <strong>
             I specialise in applications written in <span>React.</span>
           </strong>{" "}
-          Recently I became also a huge fan of one-way data flow and Redux-like
-          architecture
         </p>
         <p className="Skills__paragraph">
           My current experience and skills in front-end include
@@ -29,10 +27,7 @@ class FrontEnd extends Component {
             with features like automatic code reload, code minifications,
             multiple environments support,
           </li>
-          <li>
-            good sense of design and UX, by having some small past experience in
-            graphic design
-          </li>
+          <li>good sense of design and UX.</li>
           <li>
             ability to convert any REST API to a fully functional application by
             making the necessary front end

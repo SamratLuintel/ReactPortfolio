@@ -7,11 +7,7 @@ const MainSkills = props => {
       <p className="Skills__paragraph">
         I am a freelance <strong>full-stack web developer</strong>.
       </p>
-      <p className="Skills__paragraph">
-        I have maintained, developed and launched <span>multiple projects</span>{" "}
-        from scratch, carrying the development of its' back-end and front-end
-        codebases.
-      </p>
+
       <p className="Skills__paragraph">
         My current toolset includes{" "}
         <span>
@@ -21,13 +17,8 @@ const MainSkills = props => {
         them.
       </p>
       <p className="Skills__paragraph">
-        Feel free to ask me any questions. I can help you in your project in all
-        from the UI mockups, back-end and front-end web development to fixing
-        the design and installing & configuration of the application on
-        staging/production enviroments.
-      </p>
-      <p className="Skills__paragraph">
-        <em>Call me a Swiss Army Knife in terms of web development.</em>
+        Feel free to include me in your next project. I can do everything from
+        creating UI mockups to complete full stack application
       </p>
     </Fragment>
   );

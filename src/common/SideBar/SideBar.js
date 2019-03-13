@@ -20,9 +20,6 @@ class SideBar extends Component {
       <div className="SideBar">
         <div className="SideBar__inner">
           <div className="SideBar__person">
-            <div className="SideBar__person__avatar-wrapper">
-              <img src={Samrat} className="SideBar__person__avatar" alt="" />
-            </div>
             <div className="SideBar__person__content">
               <h1 className="SideBar__person__content__title">
                 Samrat Luintel
@@ -113,14 +110,15 @@ class SideBar extends Component {
               <div className="SideBar__social-icon">
                 <i className="fab fa-linkedin" />
               </div>
-              <div
-                onClick={() =>
-                  window.open("https://github.com/SamratLuintel", "_blank")
-                }
+              <a
+                href="https://github.com/SamratLuintel"
                 className="SideBar__social-icon"
+                target="_blank"
               >
+                {" "}
                 <i className="fab fa-github-square" />
-              </div>
+              </a>
+
               <div className="SideBar__social-icon">
                 <i className="fab fa-facebook-square" />
               </div>

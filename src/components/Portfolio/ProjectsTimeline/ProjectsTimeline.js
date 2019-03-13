@@ -87,6 +87,12 @@ class ProjectsTimeline extends Component {
               "Dark and Light theme for different day cycles.",
               "News section to know about ungoing changes in stock market"
             ]}
+            additionalDescription="This project was a part of Chingu Voyage 7 (better explained in github). I was mainly responsible for:"
+            additionalBulletsInfo={[
+              "Whole front end of the application",
+              "showing the stock info in table and chart from their respective apis",
+              "Backend and frontend of discussion page"
+            ]}
             technologies={[
               "react",
               "redux",
@@ -134,6 +140,13 @@ class ProjectsTimeline extends Component {
               "Forum to discuss the trending topic, issue, problems among the enthusiastic learners",
               "Paginated practise sets on various topics",
               "Detail roadmap on various domain of software engineering, info on major online courses etc"
+            ]}
+            additionalDescription="This project is a part of month long hackanthon.I was mainly responsible for:"
+            additionalBulletsInfo={[
+              "Creating the Landing page",
+              "Complete front end and backend of forum",
+              "Sunburst data visualization",
+              "Practise set page with it's backend"
             ]}
             technologies={[
               "react",

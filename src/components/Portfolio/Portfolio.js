@@ -11,7 +11,8 @@ class Portfolio extends Component {
           <div className="Portfolio__main-section">
             <h1 className="Portfolio__title">Portfolio</h1>
             <p className="Portfolio__description">
-              See my works below. Unless stated otherwise in their description,
+              See my works below. Two of the projects were done in group. Unless
+              stated otherwise in their description,
               <span>
                 all their back-end and front-end parts were completely done by
                 me.

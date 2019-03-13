@@ -2,12 +2,6 @@ import React, { Component } from "react";
 import classnames from "classnames";
 
 class SingleProjectCard extends Component {
-  redirectToRepo = () => {
-    window.open(this.props.github, "_blank");
-  };
-  redirectToLink = () => {
-    window.open(this.props.link, "_blank");
-  };
   render() {
     const { props } = this;
     return (
@@ -43,21 +37,32 @@ class SingleProjectCard extends Component {
                 ))}
               </ul>
             </div>
-
-            <div
-              onClick={this.redirectToRepo}
+            {props.additionalDescription && (
+              <p className="SingleProjectCard__project-description__paragraph">
+                {props.additionalDescription}
+              </p>
+            )}
+            {props.additionalBulletsInfo && (
+              <ul className="SingleProjectCard__project-info-lists">
+                {props.additionalBulletsInfo.map(info => (
+                  <li className="SingleProjectCard__project-info">{info}</li>
+                ))}
+              </ul>
+            )}
+            <a
+              href={props.github}
+              target="_blank"
               className="SingleProjectCard__details-btn SingleProjectCard__details-btn--only-outline"
-              role="button"
             >
               Git Repo
-            </div>
-            <div
-              onClick={this.redirectToLink}
+            </a>
+            <a
+              href={props.link}
+              target="_blank"
               className="SingleProjectCard__details-btn"
-              role="button"
             >
               View Live
-            </div>
+            </a>
 
             <div className="SingleProjectCard__project-technologies">
               <div className="SingleProjectCard__project-technologies__title">
