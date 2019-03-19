@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import SideBar from "../../common/SideBar/SideBar";
 
 class Contact extends Component {
-  openGitHub = () => {
-    window.open("https://github.com/SamratLuintel", "_blank");
-  };
   render() {
     return (
       <div className="Contact">
@@ -19,30 +16,41 @@ class Contact extends Component {
               <div className="Contact__single-card">
                 <div className="Contact__single-card__header">Email:</div>
                 <div className="Contact__single-card__info">
-                  <div className="Contact__single-card__link">
+                  <a
+                    href="mailto:ngc2058@gmail.com"
+                    className="Contact__single-card__link"
+                  >
                     <i className="fas fa-envelope" />
                     ngc2058@gmail.com
-                  </div>
+                  </a>
                 </div>
               </div>
 
               <div className="Contact__single-card">
                 <div className="Contact__single-card__header">Linkedin:</div>
                 <div className="Contact__single-card__info">
-                  <div className="Contact__single-card__link">
+                  <a
+                    href="https://www.linkedin.com/in/samrat-luitel/"
+                    target="_blank"
+                    className="Contact__single-card__link"
+                  >
                     <i className="fab fa-linkedin-in" />
                     samrat
-                  </div>
+                  </a>
                 </div>
               </div>
 
-              <div onClick={this.openGitHub} className="Contact__single-card">
+              <div className="Contact__single-card">
                 <div className="Contact__single-card__header">Github:</div>
                 <div className="Contact__single-card__info">
-                  <div className="Contact__single-card__link">
+                  <a
+                    href="https://github.com/SamratLuintel"
+                    target="_blank"
+                    className="Contact__single-card__link"
+                  >
                     <i className="fab fa-github" />
                     SamratLuintel
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>

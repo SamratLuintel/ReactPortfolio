@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Samrat from "../../assets/images/samrat.jpg";
 import classnames from "classnames";
 import { withRouter } from "react-router-dom";
+import Resume from "../../assets/resume.pdf";
 
 class SideBar extends Component {
   state = {
@@ -94,9 +95,13 @@ class SideBar extends Component {
               </ul>
 
               <ul className="SideBar__navigation-links-lists SideBar__navigation-links-lists--top-margin">
-                <li className="SideBar__navigation-link">
+                <a
+                  href={Resume}
+                  download="resume"
+                  className="SideBar__navigation-link"
+                >
                   My CV <span />
-                </li>
+                </a>
               </ul>
             </div>
           </div>
@@ -104,12 +109,19 @@ class SideBar extends Component {
           <div className="SideBar__social-block">
             <div className="SideBar__social-block__title">Get in touch</div>
             <div className="SideBar__social-icons-lists">
-              <div className="SideBar__social-icon">
+              <a
+                href="mailto:ngc2058@gmail.com"
+                className="SideBar__social-icon"
+              >
                 <i className="fas fa-envelope" />
-              </div>
-              <div className="SideBar__social-icon">
+              </a>
+              <a
+                href="https://www.linkedin.com/in/samrat-luitel/"
+                target="_blank"
+                className="SideBar__social-icon"
+              >
                 <i className="fab fa-linkedin" />
-              </div>
+              </a>
               <a
                 href="https://github.com/SamratLuintel"
                 className="SideBar__social-icon"
@@ -118,13 +130,6 @@ class SideBar extends Component {
                 {" "}
                 <i className="fab fa-github-square" />
               </a>
-
-              <div className="SideBar__social-icon">
-                <i className="fab fa-facebook-square" />
-              </div>
-              <div className="SideBar__social-icon">
-                <i className="fab fa-twitter-square" />
-              </div>
             </div>
           </div>
         </div>
