@@ -10,7 +10,8 @@ class FrontEnd extends Component {
         </h1>
         <p className="Skills__paragraph">
           <strong>
-            I specialise in applications written in <span>React.</span>
+            I mostly work with <span>React</span>. However, I can work on{" "}
+            <span>Vue</span> project too.
           </strong>{" "}
         </p>
         <p className="Skills__paragraph">
@@ -18,14 +19,12 @@ class FrontEnd extends Component {
         </p>
         <ul className="Skills__list">
           <li>
-            knowledge and huge experience in many JS ecosystem, by using many
-            libraries like React, Redux, Redux-thunk, RxJS, React-router
-            Lodash/Underscore and whatever else was needed.
+            knowledge and experience working in latest version of React using
+            React Hooks, Context API, React Router etc.
           </li>
           <li>
-            full integration of front-end development using tools like Webpack
-            with features like automatic code reload, code minifications,
-            multiple environments support,
+            ability to setup modern node based development workflow with proper
+            test coverage.
           </li>
           <li>good sense of design and UX.</li>
           <li>

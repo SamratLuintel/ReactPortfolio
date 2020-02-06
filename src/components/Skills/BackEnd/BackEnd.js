@@ -10,8 +10,8 @@ class BackEnd extends Component {
         </h1>
         <p className="Skills__paragraph">
           <strong>
-            In back-end development, my current stack involves{" "}
-            <span>NodeJs</span> and <span>ExpressJs Framework</span>
+            In back-end development, I work with <span>NodeJs</span>. I mostly
+            deploy application on <span>AWS via Docker</span>
           </strong>{" "}
         </p>
 
@@ -19,14 +19,13 @@ class BackEnd extends Component {
           My current experience and skills in back-end include
         </p>
         <ul className="Skills__list">
+          <li>creating RESTful API and various types of microservices.</li>
           <li>
-            cooperation with APIs, remote data synchronizations, cloud servers,
-            asynchronous workers
+            using different types of databases (like MySQL, MongoDB) as well as
+            some ORM's (Sequelize)
           </li>
-          <li>using different types of databases (like MySQL, MongoDB)</li>
           <li>
-            refactoring existing applications and writing it in modern
-            javascript
+            Dockerizing existing application and setting up CI/CD in circleCI.
           </li>
           <li>writing unit test in jest</li>
         </ul>
